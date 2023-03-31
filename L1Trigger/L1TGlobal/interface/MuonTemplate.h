@@ -78,10 +78,7 @@ public:
 
     int charge;
 
-    unsigned int etaWindow1Lower;
-    unsigned int etaWindow1Upper;
-    unsigned int etaWindow2Lower;
-    unsigned int etaWindow2Upper;
+    std::vector<Window> etaWindows;
 
     unsigned int phiWindow1Lower;
     unsigned int phiWindow1Upper;

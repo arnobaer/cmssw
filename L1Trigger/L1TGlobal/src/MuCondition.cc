@@ -435,12 +435,7 @@ const bool l1t::MuCondition::checkObjectParameter(const int iCondition,
   }
 
   // check eta
-  if (!checkRangeEta(cand.hwEtaAtVtx(),
-                     objPar.etaWindow1Lower,
-                     objPar.etaWindow1Upper,
-                     objPar.etaWindow2Lower,
-                     objPar.etaWindow2Upper,
-                     8)) {
+  if (!checkRangeEta(cand.hwEtaAtVtx(), objPar.etaWindows, 8)) {
     LogDebug("L1TGlobal") << "\t\t l1t::Candidate failed checkRange(eta)" << std::endl;
     return false;
   }
